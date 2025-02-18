@@ -3,7 +3,7 @@ import Header from "~/components/header/header";
 import type { RequestHandler } from "@builder.io/qwik-city";
 import { extractLang } from "~/i18n";
 
-const locales = new Set(["en", "fr", "sk", "sp"]);
+const locales = new Set(["en", "ja"]);
 
 export const onGet: RequestHandler = async ({
   request,

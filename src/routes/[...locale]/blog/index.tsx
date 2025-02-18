@@ -3,9 +3,9 @@ import { Link } from "@builder.io/qwik-city";
 
 export default component$(() => (
   <div>
-    <p>{$localize`Blog welcome text`}</p>
+    <p>{$localize`ようこそブログへ!`}</p>
     <Link
       href={$localize`/__/blog/${"hello-world"}/`}
-    >{$localize`Hello world`}</Link>
+    >{$localize`ハローワールド`}</Link>
   </div>
 ));

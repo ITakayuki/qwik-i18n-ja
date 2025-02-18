@@ -37,15 +37,13 @@ export default component$(() => {
         </a>
       </div>
       <ul>
+        <LocaleLink locale="ja" location={location} />
         <LocaleLink locale="en" location={location} />
-        <LocaleLink locale="fr" location={location} />
-        <LocaleLink locale="sk" location={location} />
-        <LocaleLink locale="sp" location={location} />
         <li>
           <span>|</span>
         </li>
         <li>
-          <Link href={$localize`/__/blog`}>{$localize`Blog`}</Link>
+          <Link href={$localize`/__/blog`}>{$localize`ブログ`}</Link>
         </li>
       </ul>
     </header>

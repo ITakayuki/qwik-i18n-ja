@@ -5,19 +5,17 @@ import type { RenderOptions } from "@builder.io/qwik/server";
 
 // You must declare all your locales here
 import EN from "./locale/message.en.json";
-import SK from "./locale/message.sk.json";
-import FR from "./locale/message.fr.json";
-import SP from "./locale/message.sp.json";
+import JA from "./locale/message.ja.json";
 
 // Make sure it's obvious when the default locale was selected
-const defaultLocale = "sk";
+const defaultLocale = "ja";
 
 /**
  * Function used to load all translations variants.
  */
 export function initTranslations() {
   console.log("  ➜  Loading translations...");
-  [SK, EN, FR, SP].forEach(({ translations, locale }) => {
+  [JA,EN].forEach(({ translations, locale }) => {
     // withLocale sets the locale for the duration of the callback
     withLocale(locale, () => loadTranslations(translations));
   });

@@ -7,11 +7,11 @@ export default component$(() => {
   });
   return (
     <>
-      <h1>{$localize`Counter Example`}</h1>
+      <h1>{$localize`カウンターサンプル`}</h1>
       <div>{$localize`count: ${state.count}`}</div>
       <button
         onClick$={async () => state.count++}
-      >{$localize`increment`}</button>
+      >{$localize`インクリメント`}</button>
     </>
   );
 });
